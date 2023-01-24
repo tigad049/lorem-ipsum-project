@@ -10,9 +10,10 @@ html {
 :root {
   --background: #4D5159;
   --text: #D0D9D9;
-  --header-color: #403636;
-  --accent1: #588C49;
-  --accent2: #A64949;
+  --header-text: #3F3F40;
+  --accent1: #D9BEB4;
+  --accent2: #A64646;
+  font-family: 'Cabin', sans-serif;
 }
 
 body {
@@ -21,6 +22,7 @@ body {
   padding: 0;
   color: var(--text);
   background-color: var(--background);
+  line-height: 30px;
 }
 
 header {
@@ -29,21 +31,31 @@ header {
   background-repeat: no-repeat;
   background-position-y: -300px;
   height: 100vh;
-  min-height: 600px;
-  max-height: 700px;
+  min-height: 400px;
+  max-height: 500px;
 }
 
 header section {
   padding: 1rem;
-  color: var(--header-color);
+  font-family: 'PT Sans', sans-serif;
+  line-height: initial;
 }
 
 header section h1 {
   font-size: 2.2em;
+  margin-bottom: 0;
 }
 
 header section p {
   font-size: 1.1em;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+header section mark {
+  padding: 0.25rem;
+  background-color: var(--text);
+  color: var(--header-text);
 }
 
 .centered-main {
@@ -52,6 +64,15 @@ header section p {
   margin: 0 auto;
 }
 
+section article p {
+  font-size: large;
+}
+
 a {
-  color: #588C49;
+  color: var(--accent1);
+}
+
+footer {
+  padding: 2px;
+  background-color: var(--header-text);
 }
