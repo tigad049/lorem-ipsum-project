@@ -22,7 +22,7 @@ body {
   padding: 0;
   color: var(--text);
   background-color: var(--background);
-  line-height: 30px;
+  line-height: 26px;
 }
 
 header {
@@ -65,7 +65,7 @@ header section mark {
 }
 
 section article p {
-  font-size: large;
+  font-size: 16px;
 }
 
 a {
@@ -75,4 +75,21 @@ a {
 footer {
   padding: 2px;
   background-color: var(--header-text);
+}
+
+.box-right {
+  box-sizing: content-box;
+  float: right;
+  width: 400px;
+  padding: 0.5em;
+  border: 2px solid var(--header-text);
+  margin: 0 0 0 1em;
+}
+
+.box-right img {
+  width: 100%
+}
+
+.clear-float {
+  clear: both;
 }
